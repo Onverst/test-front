@@ -17,4 +17,8 @@ window.addEventListener('scroll', (e) => {
     // console.log(window.scrollY)
 })
 
+const screenWidth = window.screen.width;
+if(screenWidth <= 768) {
+    document.querySelector('.header').setAttribute('data-scroll', '30');
+}
 
