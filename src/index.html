@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="first" data-fullscreen>
+					<div class="first__container">
+						<div class="first__left">
+							<h1 class="first__title">Ремонт под ключ от&nbsp;2900 руб/м2.</h1>
+							<p class="first__text">При заказе ремонта делаем дизайн-проект в подарок</p>
+
+							<ul class="first__list">
+								<li class="first__item first-item">
+									<img src="img/icon1.svg" alt="Иконка" class="first-item__icon">
+									<p class="first-item__text">Бесплатный выезд в день обращения</p>
+								</li>
+								<li class="first__item first-item">
+									<img src="img/icon2.svg" alt="Иконка" class="first-item__icon">
+									<p class="first-item__text">Гарантия на работу до 5 лет</p>
+								</li>
+								<li class="first__item first-item">
+									<img src="img/icon3.svg" alt="Иконка" class="first-item__icon">
+									<p class="first-item__text">Жесткое соблюдение сроков</p>
+								</li>
+							</ul>
+						</div>
+
+						<form action="#" class="first__right form">
+							<h3 class="form__title">Рассчитайте стоимость ремонта</h3>
+
+							<div class="form__slide form-slide">
+								<span class="form-slide__text">Площадь квартиры:</span>
+								<div class="tooltip"></div>
+								<div id="range"></div>
+
+							</div>
+
+							<div class="form__item form-item">
+								<span class="form-item__text">Тип жилья:</span>
+								<div class="form-item__wrap">
+
+									<input id="1-1" type="radio" name="type" class="form-item__radio" value="1">
+									<label for="1-1">
+										<span>Вторичное жилье</span>
+									</label>
+
+									<input id="1-2" type="radio" name="type" class="form-item__radio" value="2">
+									<label for="1-2">
+										<span>Новостройка</span>
+									</label>
+
+									<input id="1-3" type="radio" name="type" class="form-item__radio" value="3+">
+									<label for="1-3">
+										<span>Офис</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="form__item form-item">
+								<span class="form-item__text">Кол-во комнат:</span>
+								<div class="form-item__wrap">
+
+									<input id="2-1" type="radio" name="col" class="form-item__radio" value="1">
+									<label for="2-1">
+										<span>1</span>
+									</label>
+
+									<input id="2-2" type="radio" name="col" class="form-item__radio" value="2">
+									<label for="2-2">
+										<span>2</span>
+									</label>
+
+									<input id="2-3" type="radio" name="col" class="form-item__radio" value="3+">
+									<label for="2-3">
+										<span>3+</span>
+									</label>
+									<input type="radio" id="2-4" name="col" class="form-item__radio" value="Студия">
+									<label for="2-4">
+										<span>Студия</span>
+									</label>
+								</div>
+							</div>
+							<div class="form__btn-wrap">
+								<button class="form__btn btn">Отправить</button>
+							</div>
+						</form>
+					</div>
+					<img src="img/first.png" alt="Картинка" class="first__img img-scroll" data-watch-once data-watch >
+					<a href="#" data-goto=".two" class="scroll"><img src="img/scroll.svg" alt="scroll" class="scroll__icon"><span class="scroll__text">Scroll</span></a>
+				</section>
+
+				<section class="two" style="min-height: 200vh;background: linear-gradient(99.89deg, #3625AF 0%, #C46BD5 98.82%);"></section>
+				<section class="three"></section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
